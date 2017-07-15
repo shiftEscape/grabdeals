@@ -15,6 +15,10 @@ import { appRoutes } from './app.routes';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ProductViewPageComponent } from './pages/product-view-page/product-view-page.component';
+import { ProductService } from "./services/product.service";
+import { AccountService } from "./services/account.service";
+import { NgLocalStorage } from 'ng-localstorage';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,10 +35,11 @@ import { ProductViewPageComponent } from './pages/product-view-page/product-view
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     CustomMaterialModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ProductService, AccountService, NgLocalStorage],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

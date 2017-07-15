@@ -1,0 +1,15 @@
+#product-wrapper {
+    text-align: center;
+    .product {
+        cursor: pointer;
+        padding: 5px;
+        display: inline-block;
+        border: 1px solid #DDD;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+        img { width: 200px; }
+        div { padding: 5px; }
+        .actions { text-align: center; }
+    }
+}
