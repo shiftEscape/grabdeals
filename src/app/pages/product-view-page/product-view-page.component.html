@@ -9,6 +9,6 @@
     <div class="price">{{(product|async)?.description}} <span>{{(product|async)?.price | currency:'PHP':true:'4.2-2'}}</span></div>
     <div class="fees">Shipping Fees <span>Shipping charges will apply</span></div>
     <div class="total">Total <span>{{(product|async)?.price * quantity | currency:'PHP':true:'4.2-2'}}</span></div>
-    <div class="pay-btn" (click)="buyNow()"><button md-button md-raised-button color="primary">Buy Now</button></div>
+    <div class="pay-view" (click)="buyNow()"><button md-button md-raised-button color="primary">Buy Now</button></div>
   </div>
 </div>
