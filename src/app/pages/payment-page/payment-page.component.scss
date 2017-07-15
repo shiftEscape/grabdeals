@@ -16,6 +16,13 @@
         vertical-align: top;
         width: 50%;
         div { padding: 5px; }
+        .name {
+            background: #9e9e9e;
+            color: #FFF;
+            font-weight: 300;
+            padding: 10px;
+        }
+        .seller { font-weight: bold; margin-top: 22px; span { font-weight: normal; float: right; } }
         .description {
             font-weight: bold;
             border-bottom: 1px solid #DDD;

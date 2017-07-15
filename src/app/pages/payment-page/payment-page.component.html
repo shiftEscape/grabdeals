@@ -3,7 +3,8 @@
     <img src="{{(product|async)?.images[0].src}}">
   </div>
   <div class="info">
-    <div class="name"><strong>Seller Details:</strong> <span>{{(product|async)?.owner}}</span></div>
+    <div class="name">{{(product|async)?.name}}</div>
+    <div class="seller"><strong>Seller Details:</strong> <span>{{(product|async)?.owner}}</span></div>
     <div class="quantity">Quantity <span><input type="number" min="1" value="1" [(ngModel)]="quantity"></span></div>
     <div class="description">Description <span>Amount</span></div>
     <div class="price">{{(product|async)?.description}} <span>{{(product|async)?.price | currency:'PHP':true:'4.2-2'}}</span></div>

@@ -16,6 +16,13 @@
         vertical-align: top;
         width: 50%;
         div { padding: 5px; }
+        .name {
+            background: #9e9e9e;
+            color: #FFF;
+            font-weight: 300;
+            padding: 10px;
+        }
+        .seller { font-weight: bold; margin-top: 22px; span { font-weight: normal; float: right; } }
         .description {
             font-weight: bold;
             border-bottom: 1px solid #DDD;
@@ -24,6 +31,7 @@
             span { float: right; }
         }  
         .quantity {
+            color: #7ebb12;
             font-weight: bold;
             padding-bottom: 10px;
             span { float: right; }
@@ -39,6 +47,7 @@
         .total {
             font-size: 22px;
             font-weight: bold;
+            margin-top: 30px;
             span { float: right; color: #7ebb12; }
         }
         .fees {
@@ -47,7 +56,7 @@
             margin-bottom: 10px;
             span { float: right; font-style: italic; color: #999; }
         }
-        .pay {
+        .pay-view {
             margin-top: 50px;
             font-weight: bold;
             md-icon { margin-right: 5px; }
