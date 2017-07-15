@@ -1,0 +1,14 @@
+a {
+    color: #00695f;
+    text-decoration: none;
+}
+.announcement {
+    font-size: 16px;
+    background: #FF8F00;
+    color: #FFF;
+    padding: 7px 10px;
+    .close {
+        float: right;
+        font-size: 20px;
+    }
+}

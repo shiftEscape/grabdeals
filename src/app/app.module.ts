@@ -14,6 +14,7 @@ import { AccountPageComponent } from './pages/account-page/account-page.componen
 import { appRoutes } from './app.routes';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ProductViewPageComponent } from './pages/product-view-page/product-view-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     PaymentPageComponent,
     AccountPageComponent,
     ProductsPageComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProductViewPageComponent
   ],
   imports: [
     BrowserModule,
