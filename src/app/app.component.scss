@@ -1,0 +1,93 @@
+md-toolbar { background: #322F2E; color: #FFF; padding: 0; }
+#wrapper, #subwrapper, #content {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+}
+#content { margin-top: 30px; }
+#account {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #212121;
+    height: 21px;
+    padding: 27px;
+    font-size: 14px;
+    color: #009688;
+    cursor: pointer;
+    span {
+        background: #FF8F00;
+        padding: 3px 8px;
+        margin-left: 5px;
+        color: #FFF;
+    }
+    md-icon {
+        vertical-align: middle;
+    }
+}
+#logo {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 200px;
+    height: 115px;
+    background: #009688;
+    border-top: 5px solid #00695f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 300;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#searchbar {
+    display: inline-block;
+    margin-left: 12em;
+    display: flex;
+    input {
+        padding: 10px;
+        width: 340px;
+        border: none;
+        font-size: 14px;
+        vertical-align: top;
+        margin-top: -6px;
+        height: 17px;
+        z-index: 99;
+    }
+}
+
+#subtoolbar {
+    background: #E7E8E9;
+    font-size: 14px;
+    height: 40px;
+    min-height: 40px;
+    border-bottom: 1px solid #d3d5d6;
+    #subwrapper {
+        ul {
+            list-style: none;
+            margin-left: 13em;
+        }
+        li {
+            display: inline-block;
+            border-right: 1px solid #DDD;
+            a {
+                color: #444444;
+                text-decoration: none;
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                padding: 0.8em 1rem;
+                &:hover {
+                    color: #00695f;
+                    border-bottom: 4px solid #00695f;
+                }
+            }
+            .active {
+                color: #00695f;
+                border-bottom: 4px solid #00695f;
+            }
+        }
+    }
+}

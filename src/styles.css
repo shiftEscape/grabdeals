@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./assets/fonts/fonts-roboto.css";
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+md-toolbar-row.mat-toolbar-row {
+    height: 40px;
+    min-height: 40px;
+}
+
+#searchbar .mat-raised-button.mat-primary {
+    background-color: #009688;
+    margin-top: -6px;
+    margin-left: -1px;
+    min-width: 60px;
+}
