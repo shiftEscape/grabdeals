@@ -1,5 +1,5 @@
 <div id="product-wrapper">
-  <div class="product" *ngFor="let product of (products | async)" (click)="viewProduct(product)">
+  <div class="product" *ngFor="let product of (products | async)" (click)="viewProduct(product)" title="Click to view">
     <img src="{{product.images[0].src}}" style="width: 200px">
     <div class="name">{{product.name}} by {{product.owner}}</div>
     <div class="stock">In Stock: {{product.quantity}}</div>

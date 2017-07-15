@@ -19,3 +19,10 @@ md-toolbar-row.mat-toolbar-row {
     margin-left: -1px;
     min-width: 60px;
 }
+
+.pay-btn .mat-raised-button.mat-primary {
+    width: 100%;
+    background-color: #fe9131;
+    font-size: 20px;
+    padding: 8px;
+}
