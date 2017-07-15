@@ -1,7 +1,11 @@
 <md-toolbar>
   <div id="wrapper">
     &nbsp;
-    <div id="logo"><span>GrabDeals</span></div>
+    <div id="logo">
+      <span>
+        <span class="highlight">Grab</span>Deals
+      </span>
+    </div>
     <div id="searchbar">
       <input type="text" placeholder="Search for products or stores">
       <button md-button color="primary" md-raised-button>
@@ -18,11 +22,11 @@
 <md-toolbar id="subtoolbar">
   <div id="subwrapper">
     <ul>
-      <li><a (click)="navigate('/')" class="active">Dashboard</a></li>
-      <li><a (click)="navigate('products')">Products</a></li>
-      <li><a (click)="navigate('/')">Best Offers</a></li>
-      <li><a (click)="navigate('/')">Help and Support</a></li>
-      <li><a (click)="navigate('account')">My Account</a></li>
+      <li><a (click)="navigate($event, '/')" class="link active">Dashboard</a></li>
+      <li><a (click)="navigate($event, 'products')" class="link">Products</a></li>
+      <li><a (click)="navigate($event, '/')" class="link">Best Offers</a></li>
+      <li><a (click)="navigate($event, '/')" class="link">Help and Support</a></li>
+      <li><a (click)="navigate($event, 'account')" class="link">My Account</a></li>
     </ul>
   </div>
 </md-toolbar>

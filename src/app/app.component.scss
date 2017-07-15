@@ -41,6 +41,13 @@ md-toolbar { background: #322F2E; color: #FFF; padding: 0; }
     font-weight: 300;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    span.highlight {
+        color: #FFF;
+        background: #00695f;
+        padding: 1px 5px;
+        margin-right: 1px;
+        border-radius: 5px;
+    }
 }
 #searchbar {
     display: inline-block;
