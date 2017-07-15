@@ -4,10 +4,16 @@
   </div>
   <div class="info">
     <div class="name">{{(product|async)?.name}}</div>
-    <div class="seller">Seller Details<span>{{(product|async)?.owner}}</span></div>
-    <div class="quantity">In Stock <span>{{(product|async)?.quantity}}</span></div>
-    <div class="description">Description </div>
+    <div class="seller">Seller Name:<span>{{(product|async)?.owner}}</span></div>
+    <div class="description">Description:</div>
     <div class="price">{{(product|async)?.description}}</div>
+    <div class="sizes">Available Sizes:</div>
+    <div class="sizes"><span *ngFor="let size of (product|async)?.sizes">{{size.name}}</span></div>
+    <div class="colors">
+      Available Colors:
+      <div class="colors-val"><div *ngFor="let color of (product|async)?.colors" title="{{color.name}}" [ngStyle]="{'background': color.name}"></div></div>
+    </div>
+    <div class="quantity">In Stock <span>{{(product|async)?.quantity}}</span></div>
     <div class="total">Price <span>{{(product|async)?.price | currency:'PHP':true:'4.2-2'}}</span></div>
     <div class="pay-view" (click)="buyNow()"><button md-button md-raised-button color="primary">Buy Now</button></div>
   </div>
