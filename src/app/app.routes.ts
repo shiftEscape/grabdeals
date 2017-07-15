@@ -4,6 +4,7 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
 import { AccountPageComponent } from './pages/account-page/account-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ProductViewPageComponent } from './pages/product-view-page/product-view-page.component';
+import { PaymentPageComponent } from "./pages/payment-page/payment-page.component";
 
 export const appRoutes: Routes = [
   {
@@ -20,8 +21,12 @@ export const appRoutes: Routes = [
     component: ProductsPageComponent
   },
   {
-    path: 'products/view/:productID',
+    path: 'products/:productID',
     component: ProductViewPageComponent
+  },
+  {
+    path: 'products/:productID/payment',
+    component: PaymentPageComponent
   },
   {
     path: 'account',

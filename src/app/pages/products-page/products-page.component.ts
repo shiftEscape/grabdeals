@@ -15,7 +15,7 @@ export class ProductsPageComponent implements OnInit {
   constructor(private router: Router, private productService: ProductService) { }
 
   viewProduct (product) {
-    this.router.navigate([`products/view/${product.code}`])
+    this.router.navigate([`products/${product.code}`])
   }
 
   ngOnInit() {

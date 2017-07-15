@@ -4,12 +4,11 @@
   </div>
   <div class="info">
     <div class="name"><strong>Seller Details:</strong> <span>{{(product|async)?.owner}}</span></div>
-    <div class="quantity">Quantity <span><input type="text" value="1"></span></div>
+    <div class="quantity">Quantity <span><input type="number" min="1" value="1" [(ngModel)]="quantity"></span></div>
     <div class="description">Description <span>Amount</span></div>
-    <div class="price">{{(product|async)?.description}} <span>PHP {{(product|async)?.price}}</span></div>
+    <div class="price">{{(product|async)?.description}} <span>{{(product|async)?.price | currency:'PHP':true:'4.2-2'}}</span></div>
     <div class="fees">Shipping Fees <span>Shipping charges will apply</span></div>
-    <div class="total">Total <span>PHP {{(product|async)?.price}}</span></div>
-    <div class="pay"><md-icon>payment</md-icon>Pay via UnionBank</div>
-    <div class="pay-btn"><button md-button md-raised-button color="primary">Pay Now</button></div>
+    <div class="total">Total <span>{{(product|async)?.price * quantity | currency:'PHP':true:'4.2-2'}}</span></div>
+    <div class="pay-btn" (click)="buyNow()"><button md-button md-raised-button color="primary">Buy Now</button></div>
   </div>
 </div>
