@@ -33,3 +33,11 @@ md-toolbar-row.mat-toolbar-row {
     font-size: 20px;
     padding: 8px;
 }
+
+.wrapper .mat-raised-button.mat-primary {
+    width: 420px;
+    background-color: #009688;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+}

@@ -19,6 +19,7 @@ import { ProductService } from "./services/product.service";
 import { AccountService } from "./services/account.service";
 import { NgLocalStorage } from 'ng-localstorage';
 import {HttpClientModule} from '@angular/common/http';
+import { PaymentConfirmComponent } from './pages/payment-confirm/payment-confirm.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {HttpClientModule} from '@angular/common/http';
     AccountPageComponent,
     ProductsPageComponent,
     PageNotFoundComponent,
-    ProductViewPageComponent
+    ProductViewPageComponent,
+    PaymentConfirmComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { AccountPageComponent } from './pages/account-page/account-page.componen
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ProductViewPageComponent } from './pages/product-view-page/product-view-page.component';
 import { PaymentPageComponent } from "./pages/payment-page/payment-page.component";
+import { PaymentConfirmComponent } from "app/pages/payment-confirm/payment-confirm.component";
 
 export const appRoutes: Routes = [
   {
@@ -27,6 +28,10 @@ export const appRoutes: Routes = [
   {
     path: 'products/:productID/payment',
     component: PaymentPageComponent
+  },
+  {
+    path: 'products/:productID/payment/confirm',
+    component: PaymentConfirmComponent
   },
   {
     path: 'account',
