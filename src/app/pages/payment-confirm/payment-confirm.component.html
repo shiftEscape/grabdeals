@@ -1,0 +1,13 @@
+<div class="wrapper" [hidden]="isPaid">
+  <input type="text" id="credit-card" placeholder="Credit Card Number..." [(ngModel)]="source" value="101999356329">
+  <br>
+  <input type="text" id="cvv" placeholder="CV/V" value="123">
+  <select name="" id="">
+    <option value="July">July</option>
+  </select>
+  <select name="" id="">
+    <option value="2019">2019</option>
+  </select>
+  <br>
+  <button md-button md-raised-button color="primary" (click)="confirm()">Confirm Payment</button>
+</div>

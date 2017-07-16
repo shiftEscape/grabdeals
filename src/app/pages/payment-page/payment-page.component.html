@@ -10,7 +10,11 @@
     <div class="price">{{(product|async)?.description}} <span>{{(product|async)?.price | currency:'PHP':true:'4.2-2'}}</span></div>
     <div class="fees">Shipping Fees <span>Shipping charges will apply</span></div>
     <div class="total">Total <span>{{(product|async)?.price * quantity | currency:'PHP':true:'4.2-2'}}</span></div>
-    <div class="pay"><md-icon>payment</md-icon>Pay via UnionBank</div>
-    <div class="pay-btn"><button md-button md-raised-button color="primary">Pay Now</button></div>
+    <div class="pay">
+      <input type="radio" id="bank" name="payment"><label for="bank"><md-icon>payment</md-icon>Pay via UnionBank</label>
+      <input type="radio" id="cod"  name="payment"><label for="cod"><md-icon>attach_money</md-icon>Cash on Delivery</label>
+      <input type="radio" id="remittance"  name="payment"><label for="remittance"><md-icon>send</md-icon>Remittance</label>
+    </div>
+    <div class="pay-btn"><button md-button md-raised-button color="primary" (click)="payConfirm()">Pay Now</button></div>
   </div>
 </div>

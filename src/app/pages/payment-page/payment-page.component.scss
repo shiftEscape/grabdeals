@@ -57,6 +57,10 @@
             margin-top: 50px;
             font-weight: bold;
             md-icon { margin-right: 5px; }
+            label { margin-right: 20px; cursor: pointer; }
+            input[type="radio"] {
+                vertical-align: middle;
+            }
         }
     }
 }
