@@ -11,3 +11,7 @@
   <br>
   <button md-button md-raised-button color="primary" (click)="confirm()">Confirm Payment</button>
 </div>
+
+<div class="thanks" [hidden]="!isPaid">
+  Thank You!
+</div>

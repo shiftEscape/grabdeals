@@ -15,6 +15,7 @@
     </div>
     <div class="quantity">In Stock <span>{{(product|async)?.quantity}}</span></div>
     <div class="total">Price <span>{{(product|async)?.price | currency:'PHP':true:'4.2-2'}}</span></div>
+    <div class="total" style="text-align: right"><button md-button md-raised-button color="primary">Share to Facebook</button></div>
     <div class="pay-view" (click)="buyNow()"><button md-button md-raised-button color="primary">Buy Now</button></div>
   </div>
 </div>
