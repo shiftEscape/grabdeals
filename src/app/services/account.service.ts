@@ -6,7 +6,7 @@ export class AccountService {
   
   transactionID: any;
   token = 'b4671bcf0cf59844f45d96bc05f3d0a4077ec785';
-  orderUrl = `https://www.sellax.net/api/v1/orders/?transaction=`;
+  orderUrl = `https://www.sellax.net/api/v1/order/?transaction=`;
 
   constructor(private http: HttpClient) { }
 

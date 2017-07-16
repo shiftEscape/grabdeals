@@ -27,7 +27,7 @@ export class PaymentConfirmComponent implements OnInit {
     this.productService.payThruBank(this.productID, this.source).subscribe((response:any) => {
       console.log(response)
       this.productService.rebate = response.rebate;
-      this.acctService.getOrders(response['transaction_id']).subscribe((orders:any) => {
+      this.acctService.getOrders(response['invoice']).subscribe((orders:any) => {
         console.log(orders);
       })
       this.isPaid = true;

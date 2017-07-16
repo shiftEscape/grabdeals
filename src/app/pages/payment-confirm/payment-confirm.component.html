@@ -14,4 +14,9 @@
 
 <div class="thanks" [hidden]="!isPaid">
   Thank You!
+  <br><br>
+  <span>Transactions</span>
+  <div class="row" *ngFor="let order of orders">
+    {{order.name}}
+  </div>
 </div>

@@ -18,3 +18,7 @@ select {
 .thanks {
     font-size: 48px;
 }
+
+.thanks span {
+    font-size: 18px;
+}
